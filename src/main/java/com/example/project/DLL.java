@@ -69,15 +69,17 @@ public class DLL<T> {
         current = head ;
         while (current !=null&&current.data.equals(e1)) {
         	current = current.next ;
-        	if (current == null)
-        		return;
+        	
         }
+        if (current == null)
+    		return;
         x = current ;
         while (  current != null&&!current.data.equals(e2)) {
         	current = current.next;
-        	if (current == null)
-        		return;
+        	
         }
+        if (current == null)
+    		return;
         y = current;
         
         x.next = y;
