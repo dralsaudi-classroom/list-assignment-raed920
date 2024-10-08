@@ -74,6 +74,7 @@ public class DLL<T> {
         if (current == null)
     		return;
         x = current ;
+        current = current.next;
         while (  current != null&&!current.data.equals(e2)) {
         	current = current.next;
         	
